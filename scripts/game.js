@@ -125,8 +125,8 @@ function wall(x, y) {
 }
 
 
-/* Moving the player, finding target node
-   checking for obstacles (wall or block), updating player´s position (target node) */
+/* Moving the player, finding target tile
+   checking for obstacles (wall or block), updating player´s position (target tile) */
 function move(x, y) {
     newPosition_x = Player.current_x + x;
     newPosition_y = Player.current_y + y;
@@ -146,7 +146,7 @@ function move(x, y) {
     }
 }
 
-/* Checking whether wall or another block is in the target node,
+/* Checking whether wall or another block is in the target tile,
    updating the target location with the block object */
 function moveBlock(x, y) {
     var blockObj;
